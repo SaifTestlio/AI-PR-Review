@@ -1,1 +1,3 @@
-# AI-PR-Review
+# AI-PR Review
+
+This project is for AI PR review tool poc.

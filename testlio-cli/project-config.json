@@ -1,0 +1,9 @@
+{
+    "baseURI": "https://api.example.com/",
+    "platformURI": "https://app.example.com/tmt/project/",
+    "projectId": "[projectId]",
+    "testRunCollectionGuid": "[testRunCollectionGuid]",
+    "automatedRunCollectionGuid": "[automatedRunCollectionGuid]",
+    "resultCollectionGuid": "[resultCollectionGuid]",
+    "workspaceName": "[workspaceName]"
+}

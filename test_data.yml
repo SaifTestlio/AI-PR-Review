@@ -1,0 +1,4 @@
+test_login_success:
+  username: "testuser"
+  password: "ENC[Z0FBQUFBQm5ZdHRXWkkyOEQ2Tjg5cXpCcEtuWmF0TncyRVY1M3pjQWlVbmpYTko0b0l2Q2htNHRsS3Z1Y2RoSlh2aE1EVHB2czl5ekxmVUZEcUdxNm1lRlJDQ2ExRGk2ZUE9PQ==]"
+  expected_result: "success"

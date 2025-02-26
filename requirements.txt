@@ -1,0 +1,16 @@
+# pytest - Testing framework for writing and running test cases
+pytest
+
+# selenium - Browser automation library for web testing
+# appium-python-client - Mobile automation library for iOS/Android testing and more
+selenium
+appium-python-client
+
+# allure-pytest - Allure Framework integration for pytest to generate test reports
+allure-pytest
+
+# pyyaml - YAML parser and emitter for Python
+pyyaml
+
+# cryptography - Cryptographic recipes and primitives for Python
+cryptography

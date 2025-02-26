@@ -1,0 +1,45 @@
+login_screen:
+  username_field:
+    type: "accessibility id"
+    value: "usernameField"
+  password_field:
+    type: "-ios predicate string"
+    value: "type == 'XCUIElementTypeSecureTextField' AND name == 'passwordField'"
+  login_button:
+    type: "-ios class chain"
+    value: "**/XCUIElementTypeButton[`label == 'Login'`]"
+
+home_screen:
+  welcome_message:
+    type: "accessibility id"
+    value: "welcomeMessage"
+  settings_button:
+    type: "-ios predicate string"
+    value: "label == 'Settings'"
+  logout_button:
+    type: "-ios class chain"
+    value: "**/XCUIElementTypeButton[`label == 'Logout'`]"
+  profile_icon:
+    type: "-ios predicate string"
+    value: "type == 'XCUIElementTypeImage' AND name == 'profileIcon'"
+  notifications_icon:
+    type: "-ios class chain"
+    value: "**/XCUIElementTypeButton[`label == 'Notifications'`]"
+  search_bar:
+    type: "xpath"
+    value: "//XCUIElementTypeSearchField[@name='Search']"
+  menu_items:
+    type: "xpath"
+    value: "//XCUIElementTypeTable/XCUIElementTypeCell"
+  back_button:
+    type: "name" 
+    value: "Back"
+  submit_button:
+    type: "name"
+    value: "Submit"
+  text_field:
+    type: "class name"
+    value: "XCUIElementTypeTextField"
+  table_view:
+    type: "class name" 
+    value: "XCUIElementTypeTable"

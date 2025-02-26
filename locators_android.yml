@@ -1,0 +1,45 @@
+login_screen:
+  username_field:
+    type: "id"
+    value: "com.example.app:id/usernameField"
+  password_field:
+    type: "-android uiautomator"
+    value: "new UiSelector().resourceId(\"com.example.app:id/passwordField\")"
+  login_button:
+    type: "accessibility id"
+    value: "loginButton"
+
+home_screen:
+  welcome_message:
+    type: "-android uiautomator"
+    value: "new UiSelector().text(\"Welcome\")"
+  settings_button:
+    type: "id"
+    value: "com.example.app:id/settingsButton"
+  logout_button:
+    type: "accessibility id"
+    value: "logoutButton"
+  profile_icon:
+    type: "-android viewtag"
+    value: "profileIconTag"
+  notifications_icon:
+    type: "-android datamatcher"
+    value: "{\"name\": \"hasEntry\", \"args\": [\"key\", \"value\"]}"
+  search_bar:
+    type: "tag name"
+    value: "android.widget.EditText"
+  menu_items:
+    type: "tag name" 
+    value: "android.widget.ListView"
+  back_button:
+    type: "tag name"
+    value: "android.widget.Button"
+  submit_button:
+    type: "tag name"
+    value: "android.widget.Button"
+  text_field:
+    type: "tag name"
+    value: "android.widget.EditText"
+  table_view:
+    type: "tag name"
+    value: "android.widget.ListView"

@@ -1,0 +1,6 @@
+{
+    "automatedTestNamePrefix": "Result Services: ",
+    "config": {
+      "deviceTestType": "APPIUM_PYTHON"
+    }
+}
