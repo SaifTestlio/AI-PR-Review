@@ -6,20 +6,20 @@ jobs:
   pr_review:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up Python
+      - name: Set Up Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.x'
+          python-version: '3.10'  # Use a stable Python version
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python -m pip install --upgrade pip setuptools
+          pip install pr-agent
 
-      - name: Run PR-Agent
+      - name: Run PR-Agent Review
         run: |
           python -m pr_agent.cli --pr_url="${{ github.event.pull_request.html_url }}" review
         env:
