@@ -4,6 +4,10 @@ on:
   pull_request:
     types: [opened, synchronize]
 
+permissions:
+  contents: read
+  pull-requests: write  # Required for PR-Agent to post review comments
+
 jobs:
   pr_review:
     runs-on: ubuntu-latest
@@ -14,15 +18,17 @@ jobs:
       - name: Set Up Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.10'  # Using a stable version
+          python-version: '3.10'  # Using a stable Python version
 
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
           pip install --no-cache-dir pr-agent
 
-      - name: Verify PR-Agent Installation
-        run: python -c "import pr_agent; print('PR-Agent Installed Successfully!')"
+      - name: Debug PR URL
+        shell: bash
+        run: |
+          echo "PR URL: ${{ github.event.pull_request.html_url }}"
 
       - name: Run PR-Agent Review
         run: |
