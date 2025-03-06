@@ -148,6 +148,12 @@ class WebDriverFactory:
             ProviderType.SAUCELABS,
             RemoteSauceWebDriver
         )
+        self.register_test(
+            ApplicationType.MOBILE_TEST,
+            PlatformType.IOS,
+            ProviderType.HEADSPIN,
+            RemoteSauceWebDriver
+        )
 
     def register_driver(
         self,
