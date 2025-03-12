@@ -37,3 +37,15 @@ class ProviderType(Enum):
     BITBAR = 'bitbar'
     LOCAL = 'local'
     SAUCELABS = 'saucelabs'
+
+class TpoErorr(Enum):
+    """Enum for provider types"""
+    BITBAR = 'bitbar'
+    LOCAL = 'local'
+    SAUCELABS = 'saucelabs'
+
+# class ProviderType(Enum):
+#     """Enum for provider types"""
+#     BITBAR = 'bitbar'
+#     LOCAL = 'local'
+#     SAUCELABS = 'saucelabs'
