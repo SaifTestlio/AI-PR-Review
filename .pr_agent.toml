@@ -1,0 +1,6 @@
+[pr_reviewer]
+extra_instructions="""\
+- Grammar and spelling errors
+- Delete commented code
+...
+"""
