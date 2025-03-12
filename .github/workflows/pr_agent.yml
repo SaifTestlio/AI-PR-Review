@@ -19,10 +19,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI.API_TYPE: 'azure'        
           OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
-          # OPENAI.API_VERSION: '2024-12-01-preview'
+          OPENAI.API_VERSION: '2024-05-01-preview'
           # OPENAI.KEY: ${{ secrets.AZURE_OPENAI_API_KEY }}
           OPENAI.API_BASE: ${{ secrets.AZURE_OPENAI_API_BASE }}
-          # OPENAI.DEPLOYMENT_ID: 'o3-mini'
+          OPENAI.DEPLOYMENT_ID: 'gpt-4o'
           github_action_config.auto_review: "true" # enable\disable auto review
           github_action_config.auto_describe: "true" # enable\disable auto describe
           github_action_config.auto_improve: "true" # enable\disable auto improve
