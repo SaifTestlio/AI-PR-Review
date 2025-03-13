@@ -2,5 +2,8 @@
 extra_instructions="""\
 - Grammar and spelling errors
 - Delete commented code
+- Unclear or ambiguous comments
+- Comments that require other comments to understand
+- Maintain only brief, precise, and professional comments
 ...
 """
