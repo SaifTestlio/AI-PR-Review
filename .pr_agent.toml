@@ -5,5 +5,15 @@ extra_instructions="""\
 - Unclear or ambiguous comments
 - Comments that require other comments to understand
 - Maintain only brief, precise, and professional comments
+- Organize test code into modular, maintainable components
+- Use Page Object Model (POM) for UI automation
+- API Object Model (AOM) which follows a similar principle to POM by encapsulating API request logic into reusable objects
+- Store secrets in environment variables. Don’t add environment files (i.e. .env) in git commits to avoid leaking secrets
+- Use configuration files for values that may change between environments.
+- Move test data to static files
+- Implement robust error handling mechanisms to catch and log unexpected failures without causing false negatives
+- Parameterize tests to support multiple input values and improve coverage. 
+- Do not duplicate tests
+- Tests should not be inter-dependent. To promote code reusability, prefer separating common functionality in its own scope
 ...
 """
