@@ -43,3 +43,6 @@ home_screen:
   table_view:
     type: "class name" 
     value: "XCUIElementTypeTable"
+  test_view:
+    type: "test name" 
+    value: "XCUIElementTypeTable"
